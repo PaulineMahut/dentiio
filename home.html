@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header>
+        <div class="header">
+            <nav class="nav_container">
+                <img src="https://bp-prod.nyc3.digitaloceanspaces.com/uploads/20262_48b882708da07f4476ab5d09bdc6a9807e81453a514eeb57ff12fc03a2bb0ac8.jpeg" class="pp_header" alt="" />
+                <div class="nav__icons">
+                    <i class="material-icons">home</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">notifications</i>
+                </div>
+                <!-- <p class="rechercher_par_categorie">RECHERCHER PAR CATEGORIE</p> -->
+            </nav>
+            <img src="./assets/img/logoBlancComplet.png" alt="" width="300px" height="100px" />
+
+            <div class="add_cas">
+                <i class="material-icons">add</i>
+                <p>Ajoutez un cas clinique</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu categories  -->
+
+    <div class="menu-container">
+        <div class="nav_menu">
+            <ul class="sections">
+                <li class="nav_link">
+                    <p>Pathologie</p>
+                    <span class="material-icons">chevron_right</span>
+                </li>
+                <li class="nav_link">
+                    <p>Traitement</p>
+                    <span class="material-icons">chevron_right</span>
+                </li>
+                <li class="nav_link">
+                    <p>Spécialité</p>
+                    <span class="material-icons">chevron_right</span>
+                </li>
+                <li class="nav_link">
+                    <p>Anatomie</p>
+                    <span class="material-icons">chevron_right</span>
+                </li>
+            </ul>
+        </div>
+        <div class="block_sombre" onclick="closeNavMenu();"></div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search__container">
+        <button class="categories" for="site-search" onclick="openNavMenu();">
+        Toutes les catégories
+      </button>
+        <input type="search" name="" id="" placeholder="Pathologie" />
+        <button class="click_search">
+        <i class="material-icons">search</i>
+      </button>
+    </div>
+
+    <!-- Sujet de discussion -->
+    <p class="discussion_topics">Sujets de discussion</p>
+
+    <!-- Story de dent -->
+    <div id="dent_container">
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Molaire_sur_implant.JPG/520px-Molaire_sur_implant.JPG" class="dent_background" alt="" height="300px" width="200px" />
+            <img src="https://teammanga.fr/wp-content/uploads/2021/05/ve4.jpg" alt="" class="pp_topics" />
+            <div class="blue_circle">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" class="dent_background" alt="" height="300px" width="200px" />
+            <img src="https://teammanga.fr/wp-content/uploads/2021/05/ve4.jpg" alt="" class="pp_topics" />
+            <div class="blue_circle">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" class="dent_background" alt="" height="300px" width="200px" />
+            <img src="https://teammanga.fr/wp-content/uploads/2021/05/ve4.jpg" alt="" class="pp_topics" />
+            <div class="blue_circle">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" class="dent_background" alt="" height="300px" width="200px" />
+            <img src="https://teammanga.fr/wp-content/uploads/2021/05/ve4.jpg" alt="" class="pp_topics" />
+            <div class="blue_circle">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" class="dent_background" alt="" height="300px" width="200px" />
+            <img src="https://teammanga.fr/wp-content/uploads/2021/05/ve4.jpg" alt="" class="pp_topics" />
+            <div class="blue_circle">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" class="dent_background" alt="" height="300px" width="200px" />
+            <img src="https://teammanga.fr/wp-content/uploads/2021/05/ve4.jpg" alt="" class="pp_topics" />
+            <div class="blue_circle">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" class="dent_background" alt="" height="300px" width="200px" />
+            <img src="https://teammanga.fr/wp-content/uploads/2021/05/ve4.jpg" alt="" class="pp_topics" />
+            <div class="blue_circle">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" class="dent_background" alt="" height="300px" width="200px" />
+            <img src="https://teammanga.fr/wp-content/uploads/2021/05/ve4.jpg" alt="" class="pp_topics" />
+            <div class="blue_circle">
+                <p>1</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cas cliniques -->
+    <p class="clinique_topics">
+        <span class="material-icons">assignment</span>Cas cliniques
+    </p>
+
+    <select class="tri" name="" id="">
+      <option value="">Tri par le plus récent</option>
+      <option value=""></option>
+    </select>
+
+    <div id="card-container">
+        <div class="card">
+            <div class="dent-moche">
+                <img src="https://balladnews.com/wp-content/uploads/2021/10/Combien-coute-une-arcade-complete-All-on-6.jpg" alt="" width="100%" height="100%" />
+                <div class="bulle-container">
+                    <div class="bulle-bleu">
+                        <p>Fumeur</p>
+                    </div>
+                    <div class="bulle-bleu">
+                        <p>Parodontie</p>
+                    </div>
+                    <div class="bulle-bleu">
+                        <p>Abcès</p>
+                    </div>
+                </div>
+                <div class="star_logo">
+                    <i class="material-icons">grade</i>
+                </div>
+            </div>
+            <div class="description-dent-moche">
+                <h2>Abcès parodontal</h2>
+                <p>
+                    Un jeune patient de 38 ans s’était présentéen consultation au service d’Odontologie Chirurgicale du Centre de Consultation et de Traitements Dentaires du CHU Ibn Rochd de Casablanca, pour une tuméfactionendobuccale de la région prémolaire mandibulaire
+                    droite...
+                </p>
+                <div class="info-container">
+                    <div class="info-profil">
+                        <img src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" width="40px" height="40px" />
+                        <div class="">
+                            <h4>Mounia</h4>
+                            <p>Chirurgien-dentiste</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <span class="material-icons">favorite</span>
+                        <span class="material-icons">chat_bubble_outline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="dent-moche">
+                <img src="https://balladnews.com/wp-content/uploads/2021/10/Combien-coute-une-arcade-complete-All-on-6.jpg" alt="" width="100%" height="100%" />
+                <div class="bulle-container">
+                    <div class="bulle-bleu">
+                        <p>Fumeur</p>
+                    </div>
+                    <div class="bulle-bleu">
+                        <p>Parodontie</p>
+                    </div>
+                    <div class="bulle-bleu">
+                        <p>Abcès</p>
+                    </div>
+                </div>
+                <div class="star_logo">
+                    <i class="material-icons">grade</i>
+                </div>
+            </div>
+            <div class="description-dent-moche">
+                <h2>Abcès parodontal</h2>
+                <p>
+                    Un jeune patient de 38 ans s’était présentéen consultation au service d’Odontologie Chirurgicale du Centre de Consultation et de Traitements Dentaires du CHU Ibn Rochd de Casablanca, pour une tuméfactionendobuccale de la région prémolaire mandibulaire
+                    droite...
+                </p>
+                <div class="info-container">
+                    <div class="info-profil">
+                        <img src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" width="40px" height="40px" />
+                        <div class="">
+                            <h4>Mounia</h4>
+                            <p>Chirurgien-dentiste</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <span class="material-icons">favorite</span>
+                        <span class="material-icons">chat_bubble_outline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="dent-moche">
+                <img src="https://balladnews.com/wp-content/uploads/2021/10/Combien-coute-une-arcade-complete-All-on-6.jpg" alt="" width="100%" height="100%" />
+                <div class="bulle-container">
+                    <div class="bulle-bleu">
+                        <p>Fumeur</p>
+                    </div>
+                    <div class="bulle-bleu">
+                        <p>Parodontie</p>
+                    </div>
+                    <div class="bulle-bleu">
+                        <p>Abcès</p>
+                    </div>
+                </div>
+                <div class="star_logo">
+                    <i class="material-icons">grade</i>
+                </div>
+            </div>
+            <div class="description-dent-moche">
+                <h2>Abcès parodontal</h2>
+                <p>
+                    Un jeune patient de 38 ans s’était présentéen consultation au service d’Odontologie Chirurgicale du Centre de Consultation et de Traitements Dentaires du CHU Ibn Rochd de Casablanca, pour une tuméfactionendobuccale de la région prémolaire mandibulaire
+                    droite...
+                </p>
+                <div class="info-container">
+                    <div class="info-profil">
+                        <img src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" width="40px" height="40px" />
+                        <div class="">
+                            <h4>Mounia</h4>
+                            <p>Chirurgien-dentiste</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <span class="material-icons">favorite</span>
+                        <span class="material-icons">chat_bubble_outline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Le footer de popo -->
+<footer></footer>
+
+<script src="./script/link-menu.js"></script>
+
+</html>

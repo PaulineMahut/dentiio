@@ -1,0 +1,22 @@
+<!-- Menu Categories -->
+<div class="menu-container">
+    <div class="header-menu">
+        <h1>Rechercher par catégorie</h1>
+    </div>
+    <div>
+        <ul class="sections">
+            <li>
+                <a href="">Pathologie</a>
+            </li>
+            <li>
+                <a href="">Traitement</a></li>
+            <li>
+                <a href="">Spécialité</a> </li>
+            <li>
+                <a href="">Anatomie</a> </li>
+        </ul>
+    </div>
+</div>
+
+.menu-container { z-index: 4; height: 100%; width: 25%; position: absolute; background-color: rgb(218, 42, 42); } .header-menu { background-color: deepskyblue; height: 125px; } .header-menu h1 { display: flex; justify-content: center; color: white; }
+.sections { display: flex; flex-direction: column; } .sections a { text-decoration: none; color: black; } .a { position: absolute; margin-top: 12vh; height: 130vh; width: 10000px; z-index: 3; background-color: rgba(0, 0, 0, 0.344); }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <div class="form__container">
+        <!-- Logo dent avec echelle -->
+        <img class="background" src="./assets/img/fond.png" alt="Dent mec" />
+
+        <!-- Formulaire -->
+        <div class="f_container">
+            <form action="">
+                <h1 class="center">Inscription</h1>
+
+                <label for="pseudo">Pseudo</label>
+                <input type="text" name="pseudo" id="" placeholder="  Placeholder text..." required/>
+
+                <label for="email">Email</label>
+                <input type="text" name="mail" id="" placeholder="  Placeholder text..." required/>
+
+                <label for="job">Vous êtes ... </label>
+                <select name="statut" id="">
+                    <option value="Chirurgien dentiste">  Chirurgien dentiste</option>
+                    <option value="Patient">  Patient</option>
+                    <option value="Autre">  Autre</option>
+                </select>
+
+                <label for="password">Mot de passe</label>
+                <input style="margin-bottom: 4px;" type="text" name="password" id="" placeholder="  Placeholder text..." />
+
+                <!-- Texte en gris mot de passe -->
+                <p class="info_mdp">8 caractères minimum, un caractère spécial, une majuscule</p>
+                <input type="submit" value="S'inscrire" name="" id="" />
+
+                <!-- Bas du formulaire -->
+                <p class="gris">Déjà un compte ?
+                    <a href="connexion.html"> Connectez-vous</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
