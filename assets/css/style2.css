@@ -80,9 +80,10 @@ body {
     display: flex;
     position: absolute;
     z-index: 4;
-    height: 140vh;
-    width: 100%;
-    display: none;
+    height: 0vh;
+    width: 0%;
+    transition: 0.5s ease;
+    visibility: hidden;
 }
 
 .open-menu-container {
@@ -91,6 +92,8 @@ body {
     z-index: 4;
     height: 140vh;
     width: 100%;
+    transition: 0.5s ease;
+    visibility: visible;
 }
 
 .nav_menu {
