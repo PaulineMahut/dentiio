@@ -1,0 +1,39 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Roboto;
+            height: 100vh;
+        }
+        /* LOGO */
+        
+        .background {
+            z-index: 1;
+        }
+        
+        .white-logo {
+            position: relative;
+            z-index: 2;
+            right: 1000px;
+            bottom: 850px;
+        }
+        
+        .logo {
+            background-color: #cde7ed;
+            height: 900px;
+            position: relative;
+            bottom: 1000px;
+            z-index: -1;
+            width: 20%;
+            border-radius: 100px 1100px 1100px 1100px;
+        }
+        /*  Formulaire de connexion */
+        
+        h1 {
+            position: relative;
+            bottom: 1300px;
+            left: 800px;
+        }
