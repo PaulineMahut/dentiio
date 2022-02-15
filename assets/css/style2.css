@@ -235,6 +235,8 @@
     
     .dent_background {
         border-radius: 20px;
+        height: 300px;
+        object-fit: cover;
     }
     
     .pp_topics {
@@ -246,6 +248,7 @@
         right: 35px;
         bottom: 310px;
         cursor: pointer;
+        object-fit: cover;
     }
     
     .blue_circle {
@@ -409,6 +412,26 @@
     /* /////////// END //////////// */
     /* /////////// DISCUSSION //////////// */
     
+    .close-button {
+        position: relative;
+        z-index: 10;
+        left: 1490px;
+        bottom: 25px;
+        height: 0;
+        width: 0;
+        cursor: pointer;
+    }
+    
+    .close-button .material-icons:hover {
+        color: rgb(178, 212, 223);
+    }
+    
+    .close-button .material-icons {
+        font-size: 65px;
+        color: white;
+        transition: 0.5s;
+    }
+    
     .fond-gris {
         position: absolute;
         top: 0;
@@ -416,6 +439,28 @@
         height: 155vh;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.404);
+    }
+    
+    .fond-gris-hidden {
+        display: none;
+        position: absolute;
+        top: 0;
+        z-index: 6;
+        height: 155vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.404);
+    }
+    
+    .message-container-hidden {
+        display: none;
+        position: absolute;
+        top: 180px;
+        right: 10%;
+        left: 10%;
+        z-index: 7;
+        height: 780px;
+        width: 80%;
+        background-color: rgb(255, 255, 255);
     }
     
     .message-container {
@@ -438,7 +483,7 @@
     
     .left {
         background-color: rgb(255, 255, 255);
-        height: 90%;
+        height: 92%;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -526,8 +571,8 @@
     }
     
     .send-container {
-        background-color: violet;
-        height: 10%;
+        background-color: #dbf5f8;
+        height: 8%;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -539,14 +584,50 @@
         border: none;
         margin-left: 50px;
         height: 50px;
+        background-color: #dbf5f8;
+        font-size: 15px;
+        outline: none;
     }
     
     .send-container [type=submit] {
-        border: 1px solid black;
-        background-color: violet;
-        border-radius: 20px;
+        border: 1px solid rgba(16, 16, 16, 0.652);
+        background-color: #dbf5f8;
+        border-radius: 14px;
         height: 30px;
-        width: 100px;
+        padding-right: 20px;
+        width: 120px;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.856);
+        transition: 0.2s ease;
+    }
+    
+    .send-container [type=submit]:hover {
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.946);
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.186);
+    }
+    
+    .fonctions-container {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .fonctions-container .material-icons {
+        color: rgba(0, 0, 0, 0.904);
+        cursor: pointer;
+    }
+    
+    .envoyer-container {
+        margin-bottom: 3%;
+    }
+    
+    .envoyer-container .material-icons {
+        position: relative;
+        top: 7px;
+        right: 37px;
     }
     /*  */
     
@@ -566,7 +647,6 @@
         align-items: center;
         width: 50%;
         height: 100%;
-        margin-left: 450px;
         gap: 10px;
         justify-content: center;
     }
